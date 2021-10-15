@@ -1,0 +1,28 @@
+{
+  "name": "webcomponents-storybook",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Stijn Koopal",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@storybook/addon-actions": "4.0.0-alpha.4",
+    "@storybook/addon-knobs": "4.0.0-alpha.4",
+    "@storybook/addon-viewport": "4.0.0-alpha.4",
+    "@storybook/polymer": "4.0.0-alpha.4",
+    "babel-core": "6.26.0",
+    "babel-runtime": "6.26.0",
+    "bower": "1.8.2",
+    "lit-html": "0.9.0",
+    "polymer-webpack-loader": "2.0.2",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "webpack": "4.6.0"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
+}
