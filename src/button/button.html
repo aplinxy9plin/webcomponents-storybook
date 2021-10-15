@@ -1,0 +1,33 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="button-default">
+  <template>
+    <style>
+     button {
+       background-color: grey;
+       color: #fff;
+     }
+    </style>
+
+    <button>[[name]]</button>
+
+  </template>
+
+  <script>
+    class Button extends Polymer.Element {
+      static get is() {
+        return 'button-default';
+      }
+      static get properties() {
+        return {
+          name: {
+            type: String,
+            value: "",
+            observer: 'observeValue',
+          },
+        };
+      }
+    }
+    customElements.define(Button.is, Button);
+  </script>
+</dom-module>
